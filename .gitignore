@@ -1,0 +1,42 @@
+# Creado por https://www.toptal.com/developers/gitignore/api/terraform
+# Editar en https://www.toptal.com/developers/gitignore?templates=terraform
+
+### Terraformar ###
+# Directorios locales .terraform
+**/.terraformar/*
+legacy/
+**/keys/** 
+
+# Archivos .tfstate
+*.tfestado
+*.tfestado.*
+
+# Archivos de registro de fallos
+registro de accidentes
+accidente.*.log
+
+# Excluir todos los archivos .tfvars que puedan contener datos confidenciales, como
+# contraseña, claves privadas y otros secretos. Estos no deberían ser parte de la versión
+# control ya que son puntos de datos potencialmente sensibles y sujetos
+# para cambiar dependiendo del entorno.
+*.variables tf
+*.tfvars.json
+
+# Ignore los archivos de anulación, ya que generalmente se utilizan para anular recursos localmente y así sucesivamente.
+# no están registrados
+anular.tf
+anular.tf.json
+*_override.tf
+*_override.tf.json
+
+# Incluya los archivos de anulación que desea agregar al control de versiones usando un patrón negado
+# !ejemplo_override.tf
+
+# Incluir archivos tfplan para ignorar la salida del plan del comando: terraform plan -out=tfplan
+# ejemplo: *tfplan*
+
+# Ignorar archivos de configuración CLI
+.terraformrc
+terraform.rc
+
+# Fin de https://www.toptal.com/developers/gitignore/api/terraform
